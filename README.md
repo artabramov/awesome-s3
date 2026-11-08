@@ -9,14 +9,14 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Table of contents
 
-- [Storage clients & tools](#storage-clients--tools) `20`
-- [Proxies & gateways](#proxies--gateways) `8`
-- [Backup, recovery & synchronization](#backup-recovery--synchronization) `11`
-- [Development & integrations](#development--integrations) `27`
-- [Security & testing](#security--testing) `13`
-- [Automation & deployment](#automation--deployment) `9`
-- [S3-compatible storage servers](#s3-compatible-storage-servers) `4`
-- [Data processing & monitoring](#data-processing--monitoring) `4`
+- [Storage clients & tools](#storage-clients--tools) `35`
+- [Proxies & gateways](#proxies--gateways) `11`
+- [Backup, recovery & synchronization](#backup-recovery--synchronization) `19`
+- [Development & integrations](#development--integrations) `47`
+- [Security & testing](#security--testing) `17`
+- [Automation & deployment](#automation--deployment) `12`
+- [S3-compatible storage servers](#s3-compatible-storage-servers) `5`
+- [Data processing & monitoring](#data-processing--monitoring) `5`
 - [Documentation & references](#documentation--references) `1`
 
 
@@ -62,6 +62,36 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 [akrylysov/bsimp](https://github.com/akrylysov/bsimp) `Apache-2.0` - Minimalistic S3-backed audio library.
 
+[talo58948/herdfs](https://github.com/talo58948/herdfs) `MIT` - Open, pluggable shared filesystem: FUSE clients, one authority, any S3 bucket.
+
+[eyebrowkang/garage-admin-console](https://github.com/eyebrowkang/garage-admin-console) `AGPL-3.0` - A modern web-based administration interface for managing Garage distributed object storage clusters.
+
+[yixian-huang/imgli](https://github.com/yixian-huang/imgli) `AGPL-3.0` - Self-hosted image hosting — one leap to a link. Single binary, S3-compatible storage, content moderation, and PicGo integration.
+
+[flightlesstux/S3-Directory-Listing](https://github.com/flightlesstux/S3-Directory-Listing) `MIT` - A lightweight, zero-dependency UI that turns any AWS S3 bucket into a clean, navigable file browser. Drop 4 files, done.
+
+[dtan4/s3url](https://github.com/dtan4/s3url) `MIT` - Generate S3 object pre-signed URL in one command.
+
+[romanzdk/s3-web-browser](https://github.com/romanzdk/s3-web-browser) `MIT` - A Flask-based S3 Browser for navigating AWS S3 buckets and files with secure, temporary URL generation for object sharing.
+
+[xtream1101/s3-concat](https://github.com/xtream1101/s3-concat) `MIT` - Concat multiple files in s3.
+
+[miroshnikov/filefive](https://github.com/miroshnikov/filefive) `GPL-3.0` - FileFive is a GUI dual-panel file transfer, synchronization and backup manager for Windows, macOS and Linux with support for SFTP, FTP and Amazon S3.
+
+[shvc/s3cli](https://github.com/shvc/s3cli) `MIT` - Command line tool for S3.
+
+[pteich/us3ui](https://github.com/pteich/us3ui) `MIT` - Universal Cross-Platform native FileManager for s3, Object Storage, SFTP, FTP.
+
+[chrishein/s3_uploader](https://github.com/chrishein/s3_uploader) `MIT` - Multithreaded recursive directory upload to S3 using FOG.
+
+[AnderEnder/s3find-rs](https://github.com/AnderEnder/s3find-rs) `BSD-2-Clause` - A command line utility to walk an Amazon S3 hierarchy. s3find is an analog of find for Amazon S3.
+
+[zwpaper/dilu](https://github.com/zwpaper/dilu) `Apache-2.0` - A colorful CLI client with icons for accessing data via OpenDAL.
+
+[ashwathstephen/sairo](https://github.com/ashwathstephen/sairo) `Apache-2.0` - Self-hosted S3 storage browser with cost intelligence, optimization recommendations, and AI-powered analytics. Works with AWS, MinIO, R2, Wasabi, and any S3-compatible endpoint.
+
+[guicamest/GDuplicate-Finder](https://github.com/guicamest/GDuplicate-Finder) - GDuplicate Finder - A Groovy way to find duplicates among your computer and network shares!
+
 [↑ Back to top](#table-of-contents)
 
 
@@ -82,6 +112,12 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md)
 [qinguoyi/osproxy](https://github.com/qinguoyi/osproxy) `Apache-2.0` - Distributed object storage proxy with one-click Docker deployment.
 
 [harshavardhana/s3www](https://github.com/harshavardhana/s3www) `Apache-2.0` - Serve static files from any S3 compatible object storage services (Let's Encrypt ready).
+
+[axl89/s3cr3t](https://github.com/axl89/s3cr3t) `GPL-3.0` - A supercharged S3 reverse proxy.
+
+[qinguoyi/osproxy-grpc](https://github.com/qinguoyi/osproxy-grpc) `Apache-2.0` - gRPC implementation of osproxy, supporting RPC and API on the same port via grpc-gateway, with one-click Docker deployment.
+
+[DullJZ/s3-balance](https://github.com/DullJZ/s3-balance) - Automatic load balancing for S3-compatible object storage, exposing a unified S3 API.
 
 [↑ Back to top](#table-of-contents)
 
@@ -111,6 +147,22 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md)
 [jeanbmar/s3-sync-client](https://github.com/jeanbmar/s3-sync-client) `MIT` - AWS CLI s3 sync command for Node.js.
 
 [nidor1998/s3sync](https://github.com/nidor1998/s3sync) `Apache-2.0` - A reliable, flexible, and fast synchronization tool for S3.
+
+[peter-evans/s3-backup](https://github.com/peter-evans/s3-backup) `MIT` - A GitHub action to mirror a repository to S3 compatible object storage.
+
+[ulver2812/aws-s3-backup](https://github.com/ulver2812/aws-s3-backup) `MIT` - This app allows you to use AWS (Amazon Web Services) S3 as backup system for desktop environments.
+
+[llangit/lambda-mongocluster-s3](https://github.com/llangit/lambda-mongocluster-s3) `MIT` - Backup MongoDB cluster database to AWS S3 via a Lambda function.
+
+[DahanItamar/DockNest](https://github.com/DahanItamar/DockNest) `AGPL-3.0` - Self-hosted Docker backup and restore with a visual server map. Move sites between servers safely, encrypted SFTP or S3 storage, verified restores.
+
+[gluonfield/dgbr](https://github.com/gluonfield/dgbr) `Apache-2.0` - Dgraph backup restore tool to/from AWS S3 bucket.
+
+[dawiddyd/resticopia](https://github.com/dawiddyd/resticopia) `GPL-2.0-only` - A mobile Android application that enables efficient and straightforward data backups powered by Restic backup software.
+
+[hu3rror/memos-litestream](https://github.com/hu3rror/memos-litestream) `GPL-3.0` - Run memos with litestream.
+
+[shellharbor/backfort](https://github.com/shellharbor/backfort) `MIT` - Backfort is a secure Linux backup and disaster recovery tool for files and Docker Compose. Create encrypted, compressed, verifiable backups with age, GPG, Minisign, rclone, S3-compatible storage, retention policies, database dumps, atomic publishing, safe restore, watchdog checks, and instant recovery workflows for servers.
 
 [↑ Back to top](#table-of-contents)
 
@@ -171,6 +223,44 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 [bluedenim/log4j-s3-search](https://github.com/bluedenim/log4j-s3-search) `MIT` - Log4j appender with S3, Azure, Google Cloud, and search publishing.
 
+[roeap/object-store-python](https://github.com/roeap/object-store-python) `Apache-2.0` - Python bindings and arrow integration for the rust object_store crate.
+
+[developmentforpeople/dfp_external_storage](https://github.com/developmentforpeople/dfp_external_storage) `MIT` - Simplest cloud file management for Frappe / ERPNext. S3 compatible external bucket can be assigned per Frappe folder, allowing you to fine-tune the location of your Frappe / ERPNext "File"s: within local filesystem or to exteral S3 bucket.
+
+[loune/s3leveldown](https://github.com/loune/s3leveldown) `MIT` - An implementation of LevelDOWN that uses Amazon S3. Turn your S3 bucket into a DB.
+
+[TemryL/ComfyS3](https://github.com/TemryL/ComfyS3) `GPL-3.0` - ComfyS3 seamlessly integrates with Amazon S3 in ComfyUI. This open-source project provides custom nodes for effortless loading and saving of images, videos, and checkpoint models directly from S3 buckets within the ComfyUI graph interface.
+
+[eleven26/goss](https://github.com/eleven26/goss) `MIT` - A lightweight Go library for cloud storage, compatible with the Amazon S3 protocol and supporting Alibaba Cloud OSS, Tencent Cloud COS, Qiniu Cloud, Huawei Cloud, AWS S3, and MinIO.
+
+[DyfanJones/s3fs](https://github.com/DyfanJones/s3fs) `MIT` - Access Amazon Web Service 'S3' as if it were a file system. File system 'API' design around R package 'fs'.
+
+[turgutahmet/kolay-xlsx-stream](https://github.com/turgutahmet/kolay-xlsx-stream) `MIT` - Stream millions of rows to XLSX with O(1) memory and direct S3 multipart upload. Laravel-friendly. PHPSpreadsheet alternative for large exports.
+
+[nikeee/lean-s3](https://github.com/nikeee/lean-s3) - A small and fast S3 client without the clutter.
+
+[mlhpdx/seekable-s3-stream](https://github.com/mlhpdx/seekable-s3-stream) `MIT` - Code library that uses S3's API to provide an efficient random-access (seekable) Stream implementation for use in code where efficient network I/O is paramount.
+
+[IamTugy/pyminio](https://github.com/IamTugy/pyminio) `MIT` - Pyminio is a python client wrapped like the os module to control minio server.
+
+[newapplesho/aws-sdk-smalltalk](https://github.com/newapplesho/aws-sdk-smalltalk) `MIT` - AWS SDK for Smalltalk.
+
+[ttax00/obsidian-s3](https://github.com/ttax00/obsidian-s3) `MIT` - An Obsidian plugin for storage and retrieval of media attachments on S3 compatible services.
+
+[algoflows/zig-s3](https://github.com/algoflows/zig-s3) `MIT` - A simple and efficient Zig native S3 client library, supporting AWS S3 and S3-compatible services like MINIO.
+
+[Ajayvarmaramineni/BYOC](https://github.com/Ajayvarmaramineni/BYOC) `Apache-2.0` - One storage API for Google Drive, Nextcloud, and S3-compatible clouds, in TypeScript and Python.
+
+[jessestuart/gatsby-source-s3-image](https://github.com/jessestuart/gatsby-source-s3-image) - GatsbyJS plugin to source images from S3-compliant APIs, with EXIF-extracting superpowers.
+
+[mlhpdx/s3-upload-stream](https://github.com/mlhpdx/s3-upload-stream) `MIT` - Code library that provides a Stream implementation that makes working with uploads to S3 easier where the size of the content isn't known a priori. It holds only partial content in memory (works with large objects), and is compatible with code libraries that work with output streams.
+
+[chris23lngr/vS3](https://github.com/chris23lngr/vS3) `MIT` - S3 storage toolkit built for the web.
+
+[Arrmlet/tracecraft](https://github.com/Arrmlet/tracecraft) `MIT` - The black box for AI agents — record every session, referee every task claim. Live mirroring + atomic coordination in a bucket YOU own. No server.
+
+[Alex1990/tiny-oss](https://github.com/Alex1990/tiny-oss) `MIT` - A tiny object storage SDK focused on uploading.
+
 [↑ Back to top](#table-of-contents)
 
 
@@ -202,6 +292,14 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 [Robothy/local-s3](https://github.com/Robothy/local-s3) `Apache-2.0` - An Amazon S3 mock service for testing and local development.
 
+[nikhil1232/Bucket-Flaws](https://github.com/nikhil1232/Bucket-Flaws) - Bucket Flaws ( S3 Bucket Mass Scanner ): A Simple Lightweight Script to Check for Common S3 Bucket Misconfigurations.
+
+[random-robbie/mass-s3-bucket-tester](https://github.com/random-robbie/mass-s3-bucket-tester) `Unlicense` - This tests a list of s3 buckets to see if they have dir listings enabled or if they are uploadable.
+
+[Kiinitix/Colossus](https://github.com/Kiinitix/Colossus) `Apache-2.0` - Secure File Storage in Cloud Computing using Hybrid Cryptography Algorithms. Colossus ensures security of the user’s data stored on cloud (AWS S3) by providing a tool that helps to encrypt files using AES and RSA. The user receives the key via email.
+
+[abhinavbom/clara](https://github.com/abhinavbom/clara) - Serverless, real-time, ClamAV+Yara scanning for your S3 Buckets.
+
 [↑ Back to top](#table-of-contents)
 
 
@@ -227,6 +325,12 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 [ricsanfre/ansible-role-minio](https://github.com/ricsanfre/ansible-role-minio) `MIT` - Ansible role for installing and configuring MinIO.
 
+[AdamShannag/volare](https://github.com/AdamShannag/volare) `MIT` - Kubernetes volume populator.
+
+[jonelantha/gatsby-s3-action](https://github.com/jonelantha/gatsby-s3-action) `MIT` - Deploy a Gatsby Project to an AWS S3 bucket (optional Cloudfront support).
+
+[richarvey/s3redirect](https://github.com/richarvey/s3redirect) `GPL-3.0` - Turn S3 into a URL redirect website using lambda and NO database.
+
 [↑ Back to top](#table-of-contents)
 
 
@@ -240,6 +344,8 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 [luiscib3r/Telezon-S3](https://github.com/luiscib3r/Telezon-S3) `MIT` - Telezon S3 is a storage service that implements Amazon S3-compatible API using Telegram as the storage backend. It allows you to store and retrieve files using standard S3 clients while leveraging Telegram's infrastructure for actual file storage.
 
+[artabramov/hidden](https://github.com/artabramov/hidden) `Apache-2.0` - Encrypted self-hosted S3 storage.
+
 [↑ Back to top](#table-of-contents)
 
 
@@ -252,6 +358,8 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md)
 [mmolimar/kafka-connect-fs](https://github.com/mmolimar/kafka-connect-fs) `Apache-2.0` - Kafka Connect FileSystem Connector.
 
 [gbram1/streamhouse](https://github.com/gbram1/streamhouse) `Apache-2.0` - Open-source event streaming platform built on S3. Kafka-compatible APIs, built-in SQL engine, schema registry — one Rust binary replaces Kafka + ZooKeeper + KSQL. Retention costs pennies, not thousands.
+
+[alash3al/xyr](https://github.com/alash3al/xyr) `Apache-2.0` - Query any data source using SQL, works with the local filesystem, s3, and more. It should be a very tiny and lightweight alternative to AWS Athena, Presto ... etc.
 
 [↑ Back to top](#table-of-contents)
 
